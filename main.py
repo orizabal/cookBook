@@ -12,6 +12,6 @@ def index():
 
 
 # View recipes from a meal
-@main.route('/recipes', methods=['GET'])
-def meals():
-    return render_template('index.html')
+@main.route('/cookbook', methods=['GET'])
+def cookbook():
+    return render_template('cookbook.html')

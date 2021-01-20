@@ -9,6 +9,17 @@
     {% block head %}{% endblock %}
 </head>
 <body>
-    {% block body %}{% endblock %}
+{% block nav %}
+    <nav >
+        <a href="{{ url_for('main.index') }}" >Home</a>
+        <a href="{{ url_for('main.cookbook') }}" >Cookbook</a>
+        <a href="{{ url_for('auth.login') }}" >Login</a>
+        <a href="{{ url_for('auth.signup') }}" >Signup</a>
+        <a href="{{ url_for('auth.logout') }}" >Logout</a>
+    </nav>
+{% endblock %}
+
+{% block body %}
+{% endblock %}
 </body>
 </html>
